@@ -196,7 +196,16 @@ publish/
 
 /recordings
 /snapshots
+InternalDocs.md
 
 *.db
 *.db-shm
 *.db-wal
+
+### OS ###
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local launch settings (per-developer ports/env)
+Properties/launchSettings.json

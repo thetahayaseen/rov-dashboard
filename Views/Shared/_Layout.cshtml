@@ -7,16 +7,11 @@
     <script type="importmap"></script>
     <link rel="stylesheet" href="~/css/output.css" asp-append-version="true" />
 </head>
-<body>
-
+<body class="bg-black text-white min-h-screen">
     <partial name="Partials\Navigation\_Navigation.cshtml" />
-
-   <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
+    <main role="main">
+        @RenderBody()
+    </main>
     <script src="~/js/signalr.min.js"></script>
     <script src="~/js/app.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
